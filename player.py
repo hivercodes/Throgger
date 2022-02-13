@@ -17,12 +17,11 @@ class Player(Turtle):
 
 
 
+
     def move(self):
         scoreboard = Scoreboard()
         self.forward(MOVE_DISTANCE)
-        if self.ycor() == FINISH_LINE_Y:
-            scoreboard.score += 1
-            self.goto(STARTING_POSITION)
+
 
 
 

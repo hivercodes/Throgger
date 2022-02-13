@@ -29,6 +29,16 @@ while game_is_on:
             game_is_on = False
 
 
+    if player.ycor() > 280:
+        player.goto(0, -280)
+        scoreboard.score += 1
+        carmanager.moving_distance = carmanager.moving_distance + carmanager.incrimented_distance
+
+
+
+
+
+
 
 scoreboard.you_lose()
 
